@@ -207,7 +207,7 @@ at login today.
 ### 6. HQ Command Center (this repo)
 
 **What it is:** local dashboard for managing everything else. Shows a grid
-of tools (CRM, Form Router, Deal Flipper, etc.) that link out to the actual
+of tools (CRM, Form Router, etc.) that link out to the actual
 projects. This is the landing page for "what am I working on."
 
 **Where it lives:** `C:\Users\wwgip\hq-command-center\`.
@@ -228,8 +228,6 @@ projects. This is the landing page for "what am I working on."
 
 **Current tools on the dashboard:**
 
-- **Deal Flipper** (active, `/deal-flipper`) — marketplace arbitrage
-  scanner with a local Flask API.
 - **Form Router** (active, `/form-router`) — hub page linking to the
   eg-form-router infrastructure.
 - **Investment Scout, Market Pulse, Deal Alerts, Research Assistant,

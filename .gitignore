@@ -10,7 +10,7 @@ dist-ssr
 
 .vercel
 
-# Python compiled bytecode (used by Deal Flipper scripts)
+# Python compiled bytecode
 __pycache__/
 *.pyc
 *.pyo

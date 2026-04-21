@@ -28,15 +28,6 @@ export const TOOLS = [
     href: '#',
   },
   {
-    id: 2,
-    name: 'Deal Flipper',
-    description: 'Find underpriced items across marketplaces to flip for profit.',
-    icon: '🔄',
-    category: 'Deals',
-    status: 'active',
-    href: '/deal-flipper',
-  },
-  {
     id: 3,
     name: 'Market Pulse',
     description: 'Daily snapshot of trending stocks, crypto, and macro signals.',
