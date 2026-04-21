@@ -7,3 +7,10 @@ dist-ssr
 .DS_Store
 *.log
 .claude
+
+.vercel
+
+# Python compiled bytecode (used by Deal Flipper scripts)
+__pycache__/
+*.pyc
+*.pyo

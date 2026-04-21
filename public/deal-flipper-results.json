@@ -1,0 +1,13 @@
+{
+  "scanned_at": 1776280011,
+  "deal_count": 0,
+  "deals": [],
+  "catalog_size": 0,
+  "site_status": {},
+  "elapsed_sec": 0,
+  "config": {
+    "min_margin_pct": 30,
+    "min_sold_samples": 3,
+    "bundle_multiplier": 1.4
+  }
+}

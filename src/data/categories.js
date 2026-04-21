@@ -8,4 +8,4 @@
 // Keep "All" as the first entry — it's the default filter.
 // ------------------------------------------------------------------
 
-export const CATEGORIES = ['All', 'Finance', 'Deals', 'Research', 'Productivity'];
+export const CATEGORIES = ['All', 'Finance', 'Deals', 'Research', 'Productivity', 'Automation'];

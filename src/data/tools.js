@@ -33,8 +33,8 @@ export const TOOLS = [
     description: 'Find underpriced items across marketplaces to flip for profit.',
     icon: '🔄',
     category: 'Deals',
-    status: 'coming-soon',
-    href: '#',
+    status: 'active',
+    href: '/deal-flipper',
   },
   {
     id: 3,
@@ -71,5 +71,14 @@ export const TOOLS = [
     category: 'Productivity',
     status: 'coming-soon',
     href: '#',
+  },
+  {
+    id: 7,
+    name: 'Form Router',
+    description: 'Auto-responds to Google Forms intake with personalized setup steps. Runs on Manus as a scheduled cron every 3 days.',
+    icon: '📬',
+    category: 'Automation',
+    status: 'active',
+    href: '/form-router',
   },
 ];

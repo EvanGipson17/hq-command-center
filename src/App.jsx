@@ -1,7 +1,18 @@
-// Root component. Currently just renders the Dashboard page.
-// Add routing here later (e.g. react-router) if the app grows to multiple pages.
+// Root component — sets up client-side routing.
+// Add new pages by adding routes here and dropping a component in src/pages/.
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard.jsx';
+import DealFlipper from './pages/DealFlipper.jsx';
+import FormRouter from './pages/FormRouter.jsx';
 
 export default function App() {
-  return <Dashboard />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/deal-flipper" element={<DealFlipper />} />
+        <Route path="/form-router" element={<FormRouter />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
