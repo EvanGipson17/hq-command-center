@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "description": "OpenClaw config — Evan Gipson AI Automation. C:\\Users\\wwgip\\.openclaw\\openclaw.json",
+
+  "model": {
+    "primary": "anthropic/claude-sonnet-4-6",
+    "fallback": "openrouter/anthropic/claude-3-haiku",
+    "fallback_provider": "openrouter",
+    "fallback_on": ["rate_limit", "timeout", "service_unavailable"],
+    "temperature": 0.3,
+    "max_tokens": 4096
+  },
+
+  "gateway": {
+    "auto_restart": true,
+    "restart_delay_seconds": 5,
+    "max_restart_attempts": 10,
+    "restart_on": ["crash", "unhandled_exception", "connection_lost"]
+  },
+
+  "heartbeat": {
+    "enabled": true,
+    "interval_minutes": 30,
+    "task_file": "workspace/HEARTBEAT.md",
+    "silent_on_ok": true,
+    "ok_response": "HEARTBEAT_OK"
+  },
+
+  "memory": {
+    "enabled": true,
+    "file": "workspace/memory.md",
+    "auto_update": true,
+    "update_on": ["session_end", "explicit_save", "context_change"],
+    "max_entries": 500,
+    "format": "markdown"
+  },
+
+  "workspace": {
+    "root": "C:\\Users\\wwgip\\.openclaw\\workspace",
+    "files": {
+      "memory": "memory.md",
+      "heartbeat": "HEARTBEAT.md",
+      "system_prompt": "C:\\Users\\wwgip\\hq-command-center\\openclaw-system-prompt.md"
+    }
+  },
+
+  "telegram": {
+    "bot_username": "@EvanGipsonAI_bot",
+    "token_env": "TELEGRAM_BOT_TOKEN"
+  },
+
+  "api_keys": {
+    "anthropic_env": "ANTHROPIC_API_KEY",
+    "openrouter_env": "OPENROUTER_API_KEY"
+  },
+
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "file": "C:\\Users\\wwgip\\.openclaw\\logs\\openclaw.log",
+    "max_size_mb": 10,
+    "rotate": true
+  }
+}
